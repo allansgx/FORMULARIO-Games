@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device=width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="formu.css" media="screen">
+	<title>Formulario GAMER</title>
+</head>
+	
+<body>
+	
+	<div>
+		<h1 id="titulo">Formulário Gamer</h1>
+		<p id="subtitulo">Preencha os campos abaixo</p>
+		<br>
+	</div>
+	
+	<form method="get" action="recebe.php">
+		<fieldset class="grupo">
+			<div class="campo">
+				<label for="nome"><strong>Nome</strong></label>
+				<input type="text" name="nome" id="nome" required>
+			</div>
+		
+			<div class="campo">
+				<label for="sobrenome"><strong>Sobrenome</strong></label>
+				<input type="text" name="sobrenome" id="sobrenome" required>
+			</div>
+		</fieldset>
+			
+			<div class="campo">
+				<label for="email"><strong>Email</strong></label>
+				<input type="email" name="email" id="email" required>
+			</div>
+			
+			<div class="campo">
+				<label for="sexo"><strong>Sexo</strong></label>
+				<select id="sexo">
+					<option selected disable value="">-Selecione-</option>
+					<option>Masculino</option>
+					<option>Feminino</option>
+				</select>
+			</div>	
+			<br>
+			<div class="campo">
+				<label><strong>Quais destes lançamentos você mais ouviu falar atualmente?</strong></label><br><br>
+				<label>
+					<input type="radio" name="devweb" value="cyberpunk2077" checked>Cyber Punk 2077
+				</label>
+				<label>
+					<input type="radio" name="devweb" value="thewitcher3">The witcher 3
+				</label>
+				<label>
+					<input type="radio" name="devweb" value="thelasofuspartii">The Last of Us Part II
+				</label>
+			</div>
+			<br>
+			<fieldset class="grupo">
+				<div class="campo">
+					<label><strong>Quais destes famosos você conhece?</strong></label><br><br>
+					<input type="checkbox" id="tecnologia1" name="tecnologia1" value="Ninja">
+					<label for="tecnologia1">Ninja</label>
+					<input type="checkbox" id="tecnologia2" name="tecnologia2" value="LOUD Coringa">
+					<label for="tecnologia2">LOUD Coringa</label>
+					<input type="checkbox" id="tecnologia3" name="tecnologia3" value="Piuzinho">
+					<label for="tecnologia3">Piuzinho</label>
+					<input type="checkbox" id="tecnologia4" name="tecnologia4" value="Alanzoka">
+					<label for="tecnologia4">Alanzoka</label>
+					<input type="checkbox" id="tecnologia5" name="tecnologia5" value="Gaules">
+					<label for="tecnologia5">Gaules</label>
+				</div>
+			</fieldset>
+			
+			<div class="campo">
+				<br>
+				<label><strong>Qual jogo você gostaria que tivesse continuação?</strong></label><br><br>
+				<textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+			</div>
+			<br>
+		
+			<button class="botao" type="submit">Concluído</button>
+	</form>
+	<br><br><br>
+	
+	<footer id="rodape">© Copyright 2021 - Todos os direitos reservados -  Desenvolvido por Allan S.G.</footer>
+	
+</body>
+</html>
